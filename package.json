@@ -1,0 +1,32 @@
+{
+  "name": "techpreneur-mcp",
+  "version": "0.1.0",
+  "description": "MCP server para el Portal de Equipo de Techpreneur (Programa ITESALUD): sesiones, entregables, mentoría, documentos, equipo, Data Room y Demo Day",
+  "type": "module",
+  "bin": {
+    "techpreneur-mcp": "src/index.ts"
+  },
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "test": "bun run src/smoke.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.0",
+    "node-html-parser": "^7.0.1",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.6.0"
+  },
+  "license": "MIT",
+  "repository": "github:Chere3/techpreneur-mcp",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "techpreneur",
+    "itesalud",
+    "bun"
+  ]
+}
