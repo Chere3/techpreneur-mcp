@@ -96,9 +96,10 @@ Cada una es el POST de un formulario del portal y devuelve el aviso de éxito o 
 | `techpreneur_subir_entregable` | `/equipo/entregable_subir.php` | Sí |
 | `techpreneur_subir_entregable_sesion` | `/equipo/entregable_sesion_subir.php` | Sí |
 | `techpreneur_evaluar_sesion` | `/equipo/sesion_evaluar.php` | No |
-| `techpreneur_reservar_mentoria` | `/equipo/mentoria_reservar.php` | No |
+| `techpreneur_reservar_mentoria` | `/equipo/mentoria_reservar.php` | Sí |
+| `techpreneur_cancelar_mentoria` | `/equipo/sesion_mentoria_cancelar.php` | Sí |
 | `techpreneur_solicitar_sesion_mentor` | `/equipo/solicitar_sesion_mentor.php` | No |
-| `techpreneur_enviar_mensaje_mentor` | `/equipo/sesion_mensaje_enviar.php` | No |
+| `techpreneur_enviar_mensaje_mentor` | `/equipo/sesion_mensaje_enviar.php` | Sí |
 | `techpreneur_invitar_integrante` | `/equipo/integrante_invitar.php` | No |
 | `techpreneur_quitar_integrante` | `/equipo/integrante_eliminar.php` | No |
 | `techpreneur_guardar_perfil` | `/equipo/perfil_guardar.php` | No |

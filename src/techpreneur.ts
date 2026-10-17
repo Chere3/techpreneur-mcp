@@ -27,6 +27,7 @@ const TOOL_DE: Record<string, string> = {
   "solicitar_sesion_mentor.php": "techpreneur_solicitar_sesion_mentor",
   "sesion_mensaje_enviar.php": "techpreneur_enviar_mensaje_mentor",
   "mentoria_reservar.php": "techpreneur_reservar_mentoria",
+  "sesion_mentoria_cancelar.php": "techpreneur_cancelar_mentoria",
   "integrante_invitar.php": "techpreneur_invitar_integrante",
   "integrante_eliminar.php": "techpreneur_quitar_integrante",
   "perfil_guardar.php": "techpreneur_guardar_perfil",

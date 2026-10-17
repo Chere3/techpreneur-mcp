@@ -142,6 +142,15 @@ accion(
 );
 
 accion(
+  "techpreneur_cancelar_mentoria",
+  "Cancelar una mentoría 1:1",
+  "Cancela una sesión de mentoría reservada. El portal le avisa al mentor y el horario queda libre para otro equipo.",
+  { sesion_id: id("Id de la sesión de mentoría (sección mentoria)") },
+  "/equipo/sesion_mentoria_cancelar.php",
+  (a) => a,
+);
+
+accion(
   "techpreneur_solicitar_sesion_mentor",
   "Solicitar sesión al mentor asignado",
   "Envía una solicitud de sesión al mentor asignado del equipo.",
