@@ -173,6 +173,9 @@ export async function enviar(endpoint: string, campos: Record<string, Campo | un
   });
   const destino = res.headers.get("location");
   const pagina = destino ? await getHtml(destino) : await res.text();
+  // El portal protege algunos formularios (la firma de asistencia, desde el 15 oct 2026) con Cloudflare Turnstile.
+  if (pagina.includes("No se pudo verificar que eres una persona"))
+    throw new Error(`El portal pide verificación humana (Cloudflare Turnstile) en ${endpoint}; hazlo a mano en ${abs(destino ?? endpoint)}`);
   return { status: res.status, redirige_a: destino, pagina: outline(pagina).slice(0, 1500) };
 }
 

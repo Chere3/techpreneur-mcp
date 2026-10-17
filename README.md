@@ -111,6 +111,7 @@ Las que dicen «No» usan los nombres de campo de los formularios reales, pero n
 ## Cosas que conviene saber
 
 - **La firma de asistencia es una declaración tuya.** El portal dice: «declaras bajo tu responsabilidad que tú y/o tu equipo asistieron». La tool pide un PNG con tu firma (el portal usa un lienzo de 400×150) y firma una sesión a la vez. Úsala solo para sesiones a las que sí fuiste.
+- **La firma de asistencia ya no funciona desde la tool.** Desde el 15 oct 2026 el formulario lleva Cloudflare Turnstile y el portal rechaza el envío sin él («No se pudo verificar que eres una persona»). La tool devuelve ese error con el enlace; la firma se hace a mano en la sección «Sesiones».
 - **Subir el entregable de una sesión también lo agrega a tu Data Room.** Lo hace el portal, no el servidor.
 - **Tu cookie es tu sesión.** Quien la tenga entra al portal como tú. Vive en `.env`, que está fuera de git; no la pegues en chats ni en issues.
 - **Las lecturas son texto, no JSON.** El HTML del portal no tiene clases ni ids con significado, así que un parser por campos se rompería con cualquier cambio de diseño. Solo los horarios de mentoría van estructurados.

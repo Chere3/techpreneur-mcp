@@ -8,7 +8,8 @@
   },
   "scripts": {
     "start": "bun run src/index.ts",
-    "test": "bun run src/smoke.ts"
+    "test": "bun run src/smoke.ts",
+    "keepalive": "bun run src/keepalive.ts"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.17.0",
